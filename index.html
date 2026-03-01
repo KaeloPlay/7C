@@ -1,78 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="upper">
+            <img src="img/three-lines.svg" id="burger">
+        </div>
+        <div id="content">
+            <img src="img/profile.jpeg" style="
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 10px solid white;
+            object-fit: cover;
+            ">
 
-body {
-    margin: 0px;
-    height: auto;
-    background-image: url("img/banner.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+            <div class="info">
+                <p id="title">Kelas VIIC</p>
+                <p id="desc">Our Ma'am, Wa Yeni.<br>44 Student.</p>
 
-#upper {
-    display: flex;
-    background-color: white;
-    height: 7vh;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-}
+                <div class="social">
+                    <a href="https://www.instagram.com/viic_spendalous.well?igsh=MzZyYXFuY2ZqZW9n">
+                        <img src="img/ig.svg" style="
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        object-fit: cover;
+                        ">
+                    </a>
 
-#burger {
-    margin: 1vh 2.5vw;
-    max-width: 5%;
-    pointer-events: all;
-    cursor: pointer;
-}
+                    <a href="https://www.tiktok.com/@viic_spendalous?_r=1&_t=ZS-94K2NUctQjH">
+                        <img src="img/tt.svg" style="
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        object-fit: cover;
+                        ">
+                    </a>
+                </div>
+            </div>
 
-#title {
-    text-align: center;
-    letter-spacing: 4px;
-    font-size: clamp(20px, 5vw, 40px);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 10px;
-    margin-bottom: 0px;
-}
+            <p style="
+            margin-bottom: 0px;
+            text-align: center;
+            letter-spacing: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(15px, 3vw, 25px);
+            font-weight: 300;
+            ">Our Memories</p>
 
-#desc {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: clamp(10px, 2vw, 15px);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-}
+            <div id="memorycontainer">
+                <img src="img/memo1.jpeg" style="
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-top-left-radius: min(200px, 50%);
+                border-top-right-radius: min(200px, 50%);
+                ">
 
-#content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    background-color: white;
-    border-top-left-radius: min(200px, 50%);
-    border-top-right-radius: min(200px, 50%);
-    height: min(85vh, 100%);
-    margin-top: 25vh;
-    padding: 85px;
-    justify-content: flex-start;
-    box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-}
+                <img src="img/memo2.jpeg" style="
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-top-left-radius: min(250px, 50%);
+                border-top-right-radius: min(250px, 50%);
+                ">
 
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0px;
-}
-
-.social {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-#memorycontainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    align-items: center;
-}
+            </div>
+    </body>
+</html>
