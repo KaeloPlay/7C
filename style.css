@@ -17,7 +17,7 @@ body {
 }
 
 #burger {
-    margin: 10px 20px;
+    margin: 1vh 2.5vw;
     max-width: 5%;
     pointer-events: all;
     cursor: pointer;
@@ -26,7 +26,7 @@ body {
 #title {
     text-align: center;
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: clamp(20px, 5vw, 40px);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin: 10px;
@@ -36,7 +36,7 @@ body {
 #desc {
     text-align: center;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: clamp(10px, 2vw, 15px);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
@@ -47,8 +47,8 @@ body {
     flex-direction: column;
     gap: 50px;
     background-color: white;
-    border-top-left-radius: min(250px, 50%);
-    border-top-right-radius: min(250px, 50%);
+    border-top-left-radius: min(200px, 50%);
+    border-top-right-radius: min(200px, 50%);
     height: min(85vh, 100%);
     margin-top: 25vh;
     padding: 85px;
