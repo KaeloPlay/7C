@@ -76,9 +76,9 @@ body {
 #memorycontainer img {
     display: block;
     width: 100%;
-height: auto;
-                object-fit: cover;
-                border-top-left-radius: min(200px, 50%);
-                border-top-right-radius: min(200px, 50%);
-                box-shadow: 0px 0px 40px 25px rgba(255, 252, 127, 0.2), inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: min(200px, 50%);
+    border-top-right-radius: min(200px, 50%);
+    box-shadow: 0px 0px 40px 25px rgba(255, 252, 127, 0.2), inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
