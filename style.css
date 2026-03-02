@@ -11,16 +11,12 @@ body {
 
 #upper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    height: 7vh;
+    height: clamp(55px, 7vh, 100px);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-#burger {
-    margin: 1vh 2.5vw;
-    max-width: 5%;
-    pointer-events: all;
-    cursor: pointer;
 }
 
 #title {
@@ -75,4 +71,14 @@ body {
     flex-direction: column;
     gap: 70px;
     align-items: center;
+}
+
+#memorycontainer img {
+    display: block;
+    width: 100%;
+height: auto;
+                object-fit: cover;
+                border-top-left-radius: min(200px, 50%);
+                border-top-right-radius: min(200px, 50%);
+                box-shadow: 0px 0px 40px 25px rgba(255, 252, 127, 0.2), inset 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
